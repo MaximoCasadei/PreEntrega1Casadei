@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.Logo{
+  width: 4em;
+  height: 4em;
+  margin: .5em;
+}
+.DivMayor{
+  display: flex;
+}
+.li{
+  list-style: none;
+  margin: 1em;
+  color: aliceblue;
+  font-size: 1.3em;
+  &:hover{
+    cursor: pointer;
+    opacity: .5;
+  }
+}
+.ContentMayor{
+  justify-content: space-between;
+  background-color: #282c34;
+}
+.divImgH1 h1{
+  color: aliceblue;
+}
+.btn{
+  background-color: transparent;
+  border: none;
+}
+.carrito{
+  height: 4em;
+  width: 4em;
+}

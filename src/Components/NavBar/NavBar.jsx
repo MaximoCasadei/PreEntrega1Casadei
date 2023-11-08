@@ -1,4 +1,5 @@
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -9,21 +10,38 @@ const NavBar = () => {
             </div>
             <div className="DivMayor DivUl">
                 <ul className="DivMayor Ul">
-                    <button className="btn">
-                        <li className="li">Mates</li>
-                    </button>
-                    <button className="btn">
-                        <li className="li">Bombillas</li>
-                    </button>
-                    <button className="btn">
-                        <li className="li">Yerbas</li>
-                    </button>
-                    <button className="btn">
-                        <li className="li">Sobre Nosotros</li>
-                    </button>  
-                    <button className="btn">              
-                            <CartWidget/>
-                    </button>
+
+                        <li className="li">
+                            <Link to={'/category/electronics'}>
+                                Electronicos
+                            </Link>
+                        </li>
+                    
+                    
+                        <li className="li">
+                            <Link to={'/category/jewerly'}>
+                                Joyería
+                            </Link>
+                        </li>
+                    
+                    
+                        <li className="li">
+                            <Link to={"/category/men's-clothing"}>
+                            Ropa de Hombre
+                            </Link>
+                        </li>
+                    
+                   
+                        <li className="li">
+                            <Link to={"/category/women's-clothing"}>
+                                Ropa de Mujer
+                            </Link>
+                        </li>
+                    
+                                 
+                        <CartWidget/>
+                   
+                
                 </ul>
                 
             </div>

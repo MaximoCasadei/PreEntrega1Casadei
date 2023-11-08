@@ -1,0 +1,21 @@
+.DivMayor{
+    display: flex;
+    align-items: center;
+}
+.LinkNav{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
+
+}
+.LinkNav:hover{
+    opacity: .5;
+}
+.Ul{
+    gap: 1.5em;
+}
+.LinkLogo{
+    list-style: none;
+    text-decoration: none;
+}

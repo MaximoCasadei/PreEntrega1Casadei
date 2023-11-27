@@ -1,7 +1,22 @@
 import './Nav.css'
 import ItemCount from '../ItemCount/ItemCount';
+import { useNavigate } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({id, name, img, price, category, stock, description}) => {
+
+const navigate = useNavigate();
+const { addItem } = useContext(CartContext)
+
+const addToCart = () => {
+  addItem(itemSelected, count)
+};
+
+const handleNavigation = () => {
+  navigate('/cart');
+};
+
   return (
     <div className='Article'>
       <header>
@@ -28,6 +43,8 @@ const ItemDetail = ({id, name, img, price, category, stock, description}) => {
       </section>
 
       <footer className='footer'>
+        <button onClick={handleNavigation}>Terminar Compra</button>
+        <button onClick={addToCart}>Agregar al carrito</button>
         <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)} />
       </footer>
     </div>

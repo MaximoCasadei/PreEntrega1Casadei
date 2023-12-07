@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.links{
+    font-size: 1.5em;
+    color: white;
+}
+.links:hover{
+opacity: .5;
+}

@@ -1,0 +1,30 @@
+.body{
+    display: grid;
+    justify-items: center;
+    gap: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+.counter-btn{
+    display: flex;
+    gap: 1.2em;
+}
+.body-2{
+    display: flex;
+}
+.content-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.link{
+    font-size: 1.5em;
+    color: green;
+}
+.link2{
+    font-size: 1.5em;
+    color: rgb(128, 0, 0);
+}

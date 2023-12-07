@@ -1,0 +1,14 @@
+.Content-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detalle{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.button-detalle{
+    color: black;
+}
